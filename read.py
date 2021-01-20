@@ -20,3 +20,10 @@ for d in data:
 print('一共有', len(new), '超過100個字母')
 print(new[0])
 print(new[1])
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('有', len(good), '筆含有good的留言')
+print(good[0])
