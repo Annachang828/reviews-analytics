@@ -27,3 +27,14 @@ for d in data:
 		good.append(d)
 print('有', len(good), '筆含有good的留言')
 print(good[0])
+
+good = [1 for d in data if 'good' in d]
+print(good)
+
+bad = ['bad' in d for d in data]
+print(bad)
+
+bad = []
+for d in data:
+		bad.append('bad' in d)
+print(bad)
